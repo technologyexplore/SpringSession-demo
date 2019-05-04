@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+            当前服务器的 端口是：8080
+           会话ID:<div th:text="${#httpServletRequest.getSession().getId()}"></div>       
+	用户名:<div th:text="${session.userName}"></div>
+</body>
+</html>
